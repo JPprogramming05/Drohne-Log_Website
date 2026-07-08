@@ -385,14 +385,8 @@ img, svg { display: block; max-width: 100%; }
 /* DRK – rotes Kreuz ohne Schriftzug */
 .mark-drk svg { width: 44px; height: 44px; }
 
-/* DLRG – Wortmarke */
-.mark-dlrg {
-  font-size: 1.7rem;
-  letter-spacing: 0.06em;
-  color: #e30613;
-  font-weight: 900;
-  font-style: italic;
-}
+/* DLRG – Original-Wortmarke (freigestellt) */
+.mark-dlrg img { height: 26px; width: auto; }
 
 /* ASB – Wortmarke */
 .mark-asb {
