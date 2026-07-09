@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Drone-Log.de – Das digitale Drohnenfluglogbuch für BOS</title>
-  <meta name="description" content="Drone-Log.de ist das digitale Fluglogbuch für Behörden und Organisationen mit Sicherheitsaufgaben (BOS): Pilotenlogbuch, Drohnenlogbuch, Flugleiter-Funktion, Wartungsmanagement und Teamverwaltung – von BOS'lern für BOS'ler entwickelt.">
-  <meta property="og:title" content="Drone-Log.de – Das digitale Drohnenfluglogbuch für BOS">
-  <meta property="og:description" content="Pilotenlogbuch, Drohnenlogbuch, Flugleiter-Funktion, Wartung & Teamverwaltung – entwickelt und getestet von BOS'lern für BOS'ler.">
+  <title>Drone-Log – Die digitale Verwaltungsplattform für BOS-Drohneneinheiten</title>
+  <meta name="description" content="Drone-Log ist die digitale Verwaltungsplattform für BOS-Drohneneinheiten: Einsätze koordinieren, Flüge dokumentieren, Drohnen und Akkus verwalten, Wartungen im Blick behalten und Nachweise exportieren – alles an einem Ort.">
+  <meta property="og:title" content="Drone-Log – Die digitale Verwaltungsplattform für BOS-Drohneneinheiten">
+  <meta property="og:description" content="Einsätze koordinieren, Flüge dokumentieren, Drohnen und Akkus verwalten, Wartungen im Blick behalten und Nachweise exportieren – alles an einem Ort.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://drone-log.de">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
@@ -20,7 +20,7 @@
   <!-- ===== Header / Navigation ===== -->
   <header class="site-header" id="siteHeader">
     <div class="container header-inner">
-      <a href="#top" class="brand" aria-label="Drone-Log.de – Startseite">
+      <a href="#top" class="brand" aria-label="Drone-Log – Startseite">
         <svg class="brand-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <circle cx="10" cy="10" r="6" stroke="currentColor" stroke-width="2.5"/>
           <circle cx="38" cy="10" r="6" stroke="currentColor" stroke-width="2.5"/>
@@ -29,15 +29,15 @@
           <rect x="18" y="18" width="12" height="12" rx="3" fill="currentColor"/>
           <path d="M14.5 14.5L19 19M33.5 14.5L29 19M14.5 33.5L19 29M33.5 33.5L29 29" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
         </svg>
-        <span class="brand-name">Drone<span class="brand-accent">-Log</span>.de</span>
+        <span class="brand-name">Drone<span class="brand-accent">-Log</span></span>
       </a>
 
       <nav class="main-nav" id="mainNav" aria-label="Hauptnavigation">
         <a href="#funktionen">Funktionen</a>
-        <a href="#flugleiter">Flugleiter</a>
-        <a href="#wartung">Wartung</a>
-        <a href="#team">Teamverwaltung</a>
-        <a href="#bos">Für wen?</a>
+        <a href="#flugleiter">Flugleiter-Modus</a>
+        <a href="#technik">Technik &amp; Wartung</a>
+        <a href="#export">Export</a>
+        <a href="#team">Team</a>
         <a href="#faq">FAQ</a>
       </nav>
 
@@ -61,78 +61,187 @@
         <div class="hero-grid"></div>
         <div class="hero-glow hero-glow-1"></div>
         <div class="hero-glow hero-glow-2"></div>
-        <svg class="hero-drone" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <circle cx="40" cy="40" r="24" stroke="currentColor" stroke-width="3" opacity="0.55"/>
-          <circle cx="160" cy="40" r="24" stroke="currentColor" stroke-width="3" opacity="0.55"/>
-          <circle cx="40" cy="160" r="24" stroke="currentColor" stroke-width="3" opacity="0.55"/>
-          <circle cx="160" cy="160" r="24" stroke="currentColor" stroke-width="3" opacity="0.55"/>
-          <rect x="76" y="76" width="48" height="48" rx="10" stroke="currentColor" stroke-width="3"/>
-          <path d="M57 57l19 19M143 57l-19 19M57 143l19-19M143 143l-19-19" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-          <circle cx="100" cy="100" r="10" stroke="currentColor" stroke-width="3"/>
-        </svg>
       </div>
 
       <div class="container hero-inner">
-        <div class="hero-badge reveal">
-          <span class="badge-dot"></span>
-          Von BOS'lern für BOS'ler entwickelt &amp; getestet
-        </div>
-        <h1 class="reveal delay-1">
-          Jeder Flug. Jede Drohne.<br>
-          <span class="text-gradient">Lückenlos dokumentiert.</span>
-        </h1>
-        <p class="hero-sub reveal delay-2">
-          Drone-Log.de ist das digitale Fluglogbuch für Behörden und Organisationen mit
-          Sicherheitsaufgaben – Polizei, Feuerwehr, DRK, DLRG, ASB und mehr. Piloten- und
-          Drohnenlogbücher, Flugleiter-Koordination, Wartungsmanagement und Teamverwaltung
-          in einem Werkzeug. Rechtssicher, einsatzerprobt, sofort startklar.
-        </p>
-        <div class="hero-cta reveal delay-3">
-          <a href="https://drone-log.de" class="btn btn-primary btn-lg" target="_blank" rel="noopener">
-            Jetzt kostenlos starten
-            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m0 0-6-6m6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
-          <a href="#funktionen" class="btn btn-ghost btn-lg">Funktionen entdecken</a>
+        <div class="hero-text">
+          <div class="hero-badge reveal">
+            <span class="badge-dot"></span>
+            Aus der Praxis für Drohneneinheiten entwickelt
+          </div>
+          <h1 class="reveal delay-1">
+            Drone-Log: Die digitale Verwaltungsplattform für
+            <span class="text-gradient">BOS-Drohneneinheiten</span>
+          </h1>
+          <p class="hero-sub reveal delay-2">
+            Einsätze koordinieren, Flüge nachvollziehbar dokumentieren, Drohnen und Akkus
+            verwalten, Wartungen im Blick behalten und Nachweise exportieren –
+            alles an einem Ort.
+          </p>
+          <div class="hero-cta reveal delay-3">
+            <a href="https://drone-log.de" class="btn btn-primary btn-lg" target="_blank" rel="noopener">
+              Kostenlos testen
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m0 0-6-6m6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="#flugleiter" class="btn btn-ghost btn-lg">Demo ansehen</a>
+            <a href="mailto:kontakt@drone-log.de" class="btn btn-ghost btn-lg">Kontakt aufnehmen</a>
+          </div>
+          <ul class="hero-modules reveal delay-4" aria-label="Module der Plattform">
+            <li>Einsatzkoordination</li>
+            <li>Flugbuch &amp; Flugnachweise</li>
+            <li>Drohnenverwaltung</li>
+            <li>Wartungsverwaltung</li>
+            <li>Akkuverwaltung</li>
+            <li>Teamverwaltung</li>
+            <li>Rollen &amp; Rechte</li>
+            <li>Export von Nachweisen</li>
+            <li>Flugleiter-Modus</li>
+          </ul>
         </div>
 
-        <div class="hero-stats reveal delay-4">
-          <a class="stat" href="#funktionen">
-            <span class="stat-value">2<small>×</small></span>
-            <span class="stat-label">
-              <strong>Ein Flug, zwei Logbücher.</strong>
-              Landen, bestätigen, fertig: Piloten- und Drohnenlogbuch schreiben sich gleichzeitig – wie das genau funktioniert, sehen Sie hier.
-            </span>
-            <span class="stat-more">Mehr erfahren <span aria-hidden="true">→</span></span>
-          </a>
-          <a class="stat" href="#flugleiter">
-            <span class="stat-value">1</span>
-            <span class="stat-label">
-              <strong>Eine Lage. Ein Überblick.</strong>
-              Drei Einsätze, fünf Drohnen, ein Flugleiter – und trotzdem kein Chaos. Werfen Sie einen Blick ins Dashboard.
-            </span>
-            <span class="stat-more">Mehr erfahren <span aria-hidden="true">→</span></span>
-          </a>
-          <a class="stat" href="#ueber">
-            <span class="stat-value">100<small>%</small></span>
-            <span class="stat-label">
-              <strong>Im Einsatz geboren.</strong>
-              Jede Funktion entstand nachts am Einsatzort – nicht am Schreibtisch. Die Geschichte dahinter lesen Sie hier.
-            </span>
-            <span class="stat-more">Mehr erfahren <span aria-hidden="true">→</span></span>
-          </a>
+        <!-- Produkt-Mockup: Flugleiter-Modus (Kompaktansicht) -->
+        <div class="hero-visual reveal delay-3" aria-hidden="true">
+          <div class="mock-window mock-hero">
+            <div class="mock-titlebar">
+              <span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span>
+              <span class="mock-title">Flugleiter-Modus · Live-Lage</span>
+            </div>
+            <div class="mock-map">
+              <svg viewBox="0 0 520 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                  <linearGradient id="terrain" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#122033"/>
+                    <stop offset="1" stop-color="#0d1626"/>
+                  </linearGradient>
+                </defs>
+                <rect width="520" height="300" fill="url(#terrain)"/>
+                <path d="M0 210 C 90 190, 150 240, 240 225 S 420 250, 520 215 L 520 300 L 0 300 Z" fill="#0f2438" opacity="0.9"/>
+                <path d="M0 218 C 90 198, 150 248, 240 233 S 420 258, 520 223" fill="none" stroke="#1d4ed8" stroke-width="10" opacity="0.35"/>
+                <path d="M60 0 L 140 300 M 300 0 L 250 300 M 0 90 L 520 60" stroke="#233650" stroke-width="7" opacity="0.7"/>
+                <path d="M60 0 L 140 300 M 300 0 L 250 300 M 0 90 L 520 60" stroke="#0b1120" stroke-width="1.5" stroke-dasharray="8 10" opacity="0.9"/>
+                <circle cx="355" cy="150" r="74" fill="#ff7a1a" opacity="0.08"/>
+                <circle cx="355" cy="150" r="74" fill="none" stroke="#ff7a1a" stroke-width="1.5" stroke-dasharray="6 6" opacity="0.7"/>
+                <path d="M150 220 Q 220 130 355 150" fill="none" stroke="#34d399" stroke-width="2" stroke-dasharray="7 6"/>
+                <g transform="translate(355 150)">
+                  <rect x="-7" y="-7" width="14" height="14" rx="3.5" fill="#34d399"/>
+                  <path d="M-11 -11 L -7 -7 M 11 -11 L 7 -7 M -11 11 L -7 7 M 11 11 L 7 7" stroke="#34d399" stroke-width="2.4" stroke-linecap="round"/>
+                </g>
+                <g transform="translate(150 220)">
+                  <circle r="5.5" fill="#3b82f6"/>
+                  <circle r="11" fill="none" stroke="#3b82f6" stroke-width="1.5" opacity="0.5"/>
+                </g>
+                <g font-family="Inter, sans-serif" font-size="10.5" font-weight="600">
+                  <rect x="374" y="108" width="118" height="30" rx="7" fill="#0b1120" opacity="0.92"/>
+                  <text x="384" y="121" fill="#e6edf7">Adler 2 · in der Luft</text>
+                  <text x="384" y="132.5" fill="#9aa8bf">Flugzeit 00:23:41</text>
+                  <rect x="96" y="234" width="96" height="18" rx="6" fill="#0b1120" opacity="0.92"/>
+                  <text x="106" y="246.5" fill="#9aa8bf">Startpunkt · FL</text>
+                </g>
+              </svg>
+              <span class="mock-map-tag">3D-Einsatzkarte</span>
+            </div>
+            <div class="mock-body">
+              <div class="mock-row mock-row-active">
+                <span class="mock-status status-live"></span>
+                <div class="mock-row-text">
+                  <strong>Einsatz „Personensuche Flussufer"</strong>
+                  <small>2 Drohnen aktiv · 3 offene Aufgaben</small>
+                </div>
+                <span class="mock-tag tag-live">LIVE</span>
+              </div>
+              <div class="mock-row">
+                <span class="mock-status status-ready"></span>
+                <div class="mock-row-text">
+                  <strong>DJI M30T „Adler 2"</strong>
+                  <small>Einsatzbereit · Akku 98 % · Wartung o. k.</small>
+                </div>
+                <span class="mock-tag tag-ready">BEREIT</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== Organisationen / Logo-Karussell ===== -->
+    <!-- ===== Problem → Lösung ===== -->
+    <section class="section" id="loesungen">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">Warum Drone-Log?</span>
+          <h2>Weniger Papierkram. Mehr Überblick.</h2>
+          <p>
+            Während draußen Lage ist, muss niemand Flugzeiten, Drohnendaten oder
+            Wartungen in verschiedenen Listen zusammensuchen.
+          </p>
+        </div>
+
+        <div class="ps-grid">
+          <article class="ps-card reveal">
+            <div class="ps-problem">
+              <span class="ps-label ps-label-problem">Problem</span>
+              <p>Flüge werden doppelt dokumentiert.</p>
+            </div>
+            <div class="ps-arrow" aria-hidden="true">→</div>
+            <div class="ps-solution">
+              <span class="ps-label ps-label-solution">Lösung</span>
+              <p>Ein Flug wird einmal erfasst und kann für Pilotenlogbuch, Drohnenlogbuch und Einsatzdokumentation genutzt werden.</p>
+            </div>
+          </article>
+
+          <article class="ps-card reveal">
+            <div class="ps-problem">
+              <span class="ps-label ps-label-problem">Problem</span>
+              <p>Wartungen und Akkus werden schnell unübersichtlich.</p>
+            </div>
+            <div class="ps-arrow" aria-hidden="true">→</div>
+            <div class="ps-solution">
+              <span class="ps-label ps-label-solution">Lösung</span>
+              <p>Drone-Log zeigt Betriebsstunden, Wartungsintervalle, Akkus und Wartungsprotokolle zentral an.</p>
+            </div>
+          </article>
+
+          <article class="ps-card reveal">
+            <div class="ps-problem">
+              <span class="ps-label ps-label-problem">Problem</span>
+              <p>Im Einsatz fehlt schnell der Überblick.</p>
+            </div>
+            <div class="ps-arrow" aria-hidden="true">→</div>
+            <div class="ps-solution">
+              <span class="ps-label ps-label-solution">Lösung</span>
+              <p>Der Flugleiter-Modus bündelt aktive Einsätze, Aufgaben, Drohnen und Kartenansicht an einem Ort.</p>
+            </div>
+          </article>
+
+          <article class="ps-card reveal">
+            <div class="ps-problem">
+              <span class="ps-label ps-label-problem">Problem</span>
+              <p>Nachweise liegen verteilt in Excel, Papierlisten oder einzelnen Dateien.</p>
+            </div>
+            <div class="ps-arrow" aria-hidden="true">→</div>
+            <div class="ps-solution">
+              <span class="ps-label ps-label-solution">Lösung</span>
+              <p>Drone-Log sammelt die wichtigsten Daten zentral und macht sie für Exporte und interne Ablage nutzbar.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Zielgruppen ===== -->
     <section class="orgs" id="bos">
-      <div class="orgs-marquee" aria-label="Organisationen, für die Drone-Log.de im Einsatz ist">
+      <div class="container">
+        <p class="orgs-title">
+          Geeignet für Drohneneinheiten aus Feuerwehr, DLRG, THW, Rettungsdienst,
+          Katastrophenschutz und weiteren BOS-nahen Organisationen
+        </p>
+      </div>
+      <div class="orgs-marquee" aria-label="Beispiele für Zielgruppen von Drone-Log">
         <div class="marquee-track">
           <div class="marquee-group">
             <span class="org-mark mark-polizei" title="Polizei">POLIZEI</span>
             <span class="org-mark mark-feuerwehr" title="Feuerwehr">FEUERWEHR</span>
             <span class="org-mark mark-drk" title="Deutsches Rotes Kreuz">
-              <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Deutsches Rotes Kreuz">
+              <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rotes Kreuz">
                 <path d="M22 4h16v18h18v16H38v18H22V38H4V22h18V4Z" fill="#e30613"/>
               </svg>
             </span>
@@ -160,6 +269,12 @@
           </div>
         </div>
       </div>
+      <div class="container">
+        <p class="orgs-note">
+          Die genannten Organisationen beschreiben Zielgruppen – keine offiziellen
+          Partnerschaften oder Referenzen.
+        </p>
+      </div>
     </section>
 
     <!-- ===== Funktionen ===== -->
@@ -167,23 +282,34 @@
       <div class="container">
         <div class="section-head reveal">
           <span class="section-tag">Funktionen</span>
-          <h2>Alles, was Ihre Drohnenstaffel braucht.<br>Nichts, was sie ausbremst.</h2>
+          <h2>Eine Plattform statt vieler Listen</h2>
           <p>
-            Vom ersten Ausbildungsflug bis zum nächtlichen Einsatz: Drone-Log.de dokumentiert
-            automatisch mit – damit Sie sich auf das Wesentliche konzentrieren können.
+            Drone-Log unterstützt Drohneneinheiten dabei, Flüge, Einsätze, Wartungen und
+            Qualifikationen nachvollziehbar zu dokumentieren. Alle wichtigen Informationen
+            werden strukturiert erfasst und können später wiedergefunden oder exportiert werden.
           </p>
         </div>
 
         <div class="feature-grid">
           <article class="feature-card reveal">
             <div class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm0 2c-4 0-7 2-7 5v1h14v-1c0-3-3-5-7-5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v3m0 12v3m9-9h-3M6 12H3m14.5-5.5-2 2m-7 7-2 2m11 0-2-2m-7-7-2-2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="12" r="3.5" stroke="currentColor" stroke-width="1.8"/></svg>
             </div>
-            <h3>Pilotenlogbuch</h3>
+            <h3>Einsatzkoordination</h3>
             <p>
-              Jeder Pilot führt automatisch sein persönliches Fluglogbuch: Flugzeiten,
-              Einsatzarten und Erfahrungsnachweise – jederzeit abrufbar und exportierbar,
-              z.&nbsp;B. für Kompetenznachweise und Fortbildungen.
+              Einsätze anlegen, Drohnen und Piloten zuordnen, Aufgaben verteilen. Jeder Flug
+              im Einsatz landet automatisch in der zugehörigen Einsatzdokumentation.
+            </p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 3h9l4 4v14H6V3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 12h7M9 16h7M9 8h3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Flugbuch &amp; Flugnachweise</h3>
+            <p>
+              Ein Flug wird einmal erfasst und erscheint im Pilotenlogbuch und im
+              Drohnenlogbuch. Ausbildungs- und Einsatzflüge bleiben getrennt auswertbar.
             </p>
           </article>
 
@@ -191,191 +317,451 @@
             <div class="feature-icon">
               <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="19" cy="17" r="2.5" stroke="currentColor" stroke-width="1.8"/></svg>
             </div>
-            <h3>Drohnenlogbuch</h3>
+            <h3>Drohnenverwaltung</h3>
             <p>
-              Parallel dazu wird jede Drohne einzeln geloggt: Betriebsstunden, Starts und
-              Landungen, Akkuzyklen und Vorkommnisse – die komplette Lebensakte jedes
-              Luftfahrzeugs auf einen Blick.
+              Jede Drohne mit Seriennummer, Registrierung, Gewicht, Status, Betriebsstunden
+              und Wartungsstand – die komplette Geräteakte auf einen Blick.
             </p>
           </article>
 
           <article class="feature-card reveal">
-            <div class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v3m0 12v3m9-9h-3M6 12H3m14.5-5.5-2 2m-7 7-2 2m11 0-2-2m-7-7-2-2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="12" r="3.5" stroke="currentColor" stroke-width="1.8"/></svg>
-            </div>
-            <h3>Flugleiter-Funktion</h3>
-            <p>
-              Der Flugleiter behält die Lage im Blick: mehrere parallele Einsätze koordinieren,
-              mehrere Drohnen und Besatzungen verwalten und alle Flugbewegungen zentral
-              dokumentieren – auch bei komplexen Lagen.
-            </p>
-          </article>
-
-          <article class="feature-card reveal" id="wartung">
             <div class="feature-icon">
               <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14.7 6.3a4.5 4.5 0 0 0-5.9 5.9L4 17v3h3l4.8-4.8a4.5 4.5 0 0 0 5.9-5.9l-2.6 2.6-2.5-.5-.5-2.5 2.6-2.6Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
             </div>
-            <h3>Wartung &amp; Revisionen</h3>
+            <h3>Wartungs- &amp; Akkuverwaltung</h3>
             <p>
-              Geräte direkt im Tool warten: Wartungen, Reparaturen und Revisionen werden
-              lückenlos protokolliert und dem jeweiligen Gerät zugeordnet. Anstehende
-              Prüfungen haben Sie immer rechtzeitig im Blick.
+              Kleine und große Wartungen mit Intervallen und Protokoll. Akkus mit
+              Seriennummer, Kennung, Kapazität und Ladezyklen.
             </p>
           </article>
 
           <article class="feature-card reveal">
             <div class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3 4 7v5c0 4.5 3.4 8 8 9 4.6-1 8-4.5 8-9V7l-8-4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="9" cy="8" r="3" stroke="currentColor" stroke-width="1.8"/><circle cx="17" cy="10" r="2.4" stroke="currentColor" stroke-width="1.8"/><path d="M3.5 18c.5-2.8 2.8-4.5 5.5-4.5s5 1.7 5.5 4.5m1-4.2c1.9.4 3.3 1.6 3.8 3.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
             </div>
-            <h3>Ausbildung &amp; Einsatzflüge</h3>
+            <h3>Teamverwaltung, Rollen &amp; Rechte</h3>
             <p>
-              Ob Ausbildungsflug auf dem Übungsplatz oder realer Einsatz: Jede Flugart wird
-              sauber getrennt dokumentiert. So entstehen belastbare Nachweise für Ausbildung,
-              Prüfungen und Einsatzberichte.
+              Benutzer einer Gliederung zuordnen und mit passenden Rollen ausstatten –
+              vom Admin über Flugleiter und Pilot bis zum Wartungsverantwortlichen.
             </p>
           </article>
 
-          <article class="feature-card reveal" id="team">
+          <article class="feature-card reveal">
             <div class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="9" cy="8" r="3" stroke="currentColor" stroke-width="1.8"/><circle cx="17" cy="10" r="2.4" stroke="currentColor" stroke-width="1.8"/><path d="M3.5 18c.5-2.8 2.8-4.5 5.5-4.5s5 1.7 5.5 4.5m1-4.2c1.9.4 3.3 1.6 3.8 3.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 21h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
             </div>
-            <h3>Nutzer- &amp; Teamverwaltung</h3>
+            <h3>Export &amp; Nachweise</h3>
             <p>
-              Verwalten Sie Ihre gesamte Staffel: Rollen und Rechte, Qualifikationen und
-              Berechtigungsnachweise pro Mitglied – inklusive Überblick, wer wofür ausgebildet
-              und einsatzbereit ist.
+              Flugnachweise, Logbücher und Einsatzdokumentationen sauber exportieren –
+              für interne Ablage, Ausbildung oder wenn Nachweise vorgelegt werden müssen.
             </p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ===== Flugleiter-Highlight ===== -->
+    <!-- ===== Flugleiter-Modus ===== -->
     <section class="section section-alt" id="flugleiter">
-      <div class="container split">
-        <div class="split-text reveal">
+      <div class="container">
+        <div class="section-head reveal">
           <span class="section-tag">Flugleiter-Modus</span>
-          <h2>Die ganze Lage.<br>Ein Dashboard.</h2>
+          <h2>Flugleiter-Modus: Überblick im Einsatz behalten</h2>
           <p>
-            Bei größeren Lagen zählt der Überblick. Im Flugleiter-Modus koordinieren Sie
-            mehrere Einsätze gleichzeitig, weisen Drohnen und Piloten zu und behalten alle
-            laufenden Flüge im Blick – während Drone-Log.de im Hintergrund jede Bewegung
-            revisionssicher protokolliert.
+            Der Flugleiter-Modus unterstützt die verantwortliche Person dabei, Einsätze zu
+            koordinieren, Startfreigaben zu verwalten und den Überblick über aktive Drohnen,
+            Aufgaben und Einsatzlagen zu behalten.
           </p>
-          <ul class="check-list">
-            <li>Mehrere Einsätze parallel koordinieren</li>
-            <li>Mehrere Drohnen &amp; Besatzungen zentral verwalten</li>
-            <li>Live-Überblick über laufende Flüge</li>
-            <li>Automatische, lückenlose Einsatzdokumentation</li>
-          </ul>
-          <a href="https://drone-log.de" class="btn btn-primary" target="_blank" rel="noopener">
-            Flugleiter-Modus ausprobieren
-            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m0 0-6-6m6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
         </div>
 
+        <!-- Produkt-Mockup: Flugleiter-Dashboard (Großansicht) -->
+        <div class="fl-mock reveal" aria-hidden="true">
+          <div class="mock-window mock-wide">
+            <div class="mock-titlebar">
+              <span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span>
+              <span class="mock-title">Drone-Log · Flugleiter-Modus</span>
+              <div class="mock-toolbar">
+                <span class="mock-btn mock-btn-accent">+ Neuer Einsatz</span>
+                <span class="mock-btn">Pilot-Logbücher</span>
+                <span class="mock-btn">Drohnen-Logbuch</span>
+              </div>
+            </div>
+            <div class="fl-layout">
+              <div class="fl-sidebar">
+                <p class="fl-panel-title">Aktive Einsätze</p>
+                <div class="mock-row mock-row-active">
+                  <span class="mock-status status-live"></span>
+                  <div class="mock-row-text">
+                    <strong>Personensuche Flussufer</strong>
+                    <small>2 Drohnen · seit 00:23:41</small>
+                  </div>
+                  <span class="mock-tag tag-live">LIVE</span>
+                </div>
+                <div class="mock-row">
+                  <span class="mock-status status-live"></span>
+                  <div class="mock-row-text">
+                    <strong>Brandnachschau Gewerbegebiet</strong>
+                    <small>1 Drohne · seit 00:07:12</small>
+                  </div>
+                  <span class="mock-tag tag-live">LIVE</span>
+                </div>
+
+                <p class="fl-panel-title">Aufgaben</p>
+                <div class="mock-task"><span class="task-check task-done"></span> Startfreigabe Adler 2 erteilt</div>
+                <div class="mock-task"><span class="task-check"></span> Uferbereich Nord abfliegen</div>
+                <div class="mock-task"><span class="task-check"></span> Wärmebild an Einsatzleitung</div>
+
+                <p class="fl-panel-title">Flugzeuge</p>
+                <div class="mock-row">
+                  <span class="mock-status status-live"></span>
+                  <div class="mock-row-text">
+                    <strong>DJI M30T „Adler 2"</strong>
+                    <small>In der Luft · Akku 74 %</small>
+                  </div>
+                </div>
+                <div class="mock-row">
+                  <span class="mock-status status-ready"></span>
+                  <div class="mock-row-text">
+                    <strong>DJI Mavic 3T „Adler 4"</strong>
+                    <small>Einsatzbereit · Akku 98 %</small>
+                  </div>
+                </div>
+              </div>
+
+              <div class="fl-map">
+                <svg viewBox="0 0 640 460" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                  <defs>
+                    <linearGradient id="terrain2" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0" stop-color="#13233a"/>
+                      <stop offset="1" stop-color="#0c1524"/>
+                    </linearGradient>
+                  </defs>
+                  <rect width="640" height="460" fill="url(#terrain2)"/>
+                  <path d="M0 320 C 120 290, 200 370, 330 345 S 540 380, 640 330 L 640 460 L 0 460 Z" fill="#0f2438"/>
+                  <path d="M0 330 C 120 300, 200 380, 330 355 S 540 390, 640 340" fill="none" stroke="#1d4ed8" stroke-width="14" opacity="0.35"/>
+                  <path d="M90 0 L 190 460 M 400 0 L 330 460 M 0 130 L 640 90 M 0 230 L 640 260" stroke="#233650" stroke-width="9" opacity="0.7"/>
+                  <path d="M90 0 L 190 460 M 400 0 L 330 460 M 0 130 L 640 90 M 0 230 L 640 260" stroke="#0b1120" stroke-width="1.5" stroke-dasharray="9 11" opacity="0.9"/>
+                  <rect x="440" y="40" width="60" height="42" rx="4" fill="#1a2540"/>
+                  <rect x="510" y="52" width="44" height="30" rx="4" fill="#1a2540"/>
+                  <rect x="60" y="60" width="46" height="34" rx="4" fill="#1a2540"/>
+                  <circle cx="430" cy="205" r="98" fill="#ff7a1a" opacity="0.07"/>
+                  <circle cx="430" cy="205" r="98" fill="none" stroke="#ff7a1a" stroke-width="1.6" stroke-dasharray="7 7" opacity="0.75"/>
+                  <text x="430" y="102" fill="#ff9c4d" font-family="Inter, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle">EINSATZRAUM</text>
+                  <path d="M175 330 Q 260 200 430 205" fill="none" stroke="#34d399" stroke-width="2.2" stroke-dasharray="8 7"/>
+                  <path d="M430 205 Q 470 260 455 300" fill="none" stroke="#34d399" stroke-width="2.2" stroke-dasharray="8 7" opacity="0.6"/>
+                  <g transform="translate(430 205)">
+                    <rect x="-8" y="-8" width="16" height="16" rx="4" fill="#34d399"/>
+                    <path d="M-13 -13 L -8 -8 M 13 -13 L 8 -8 M -13 13 L -8 8 M 13 13 L 8 8" stroke="#34d399" stroke-width="2.6" stroke-linecap="round"/>
+                  </g>
+                  <g transform="translate(300 260)">
+                    <rect x="-7" y="-7" width="14" height="14" rx="3.5" fill="#3b82f6"/>
+                    <path d="M-11 -11 L -7 -7 M 11 -11 L 7 -7 M -11 11 L -7 7 M 11 11 L 7 7" stroke="#3b82f6" stroke-width="2.4" stroke-linecap="round"/>
+                  </g>
+                  <g transform="translate(175 330)">
+                    <circle r="6" fill="#e6edf7"/>
+                    <circle r="12" fill="none" stroke="#e6edf7" stroke-width="1.6" opacity="0.5"/>
+                  </g>
+                  <g font-family="Inter, sans-serif" font-size="11" font-weight="600">
+                    <rect x="450" y="158" width="132" height="32" rx="7" fill="#0b1120" opacity="0.94"/>
+                    <text x="460" y="171" fill="#e6edf7">Adler 2 · Wärmebild</text>
+                    <text x="460" y="184" fill="#9aa8bf">Höhe 62 m · 00:23:41</text>
+                    <rect x="318" y="272" width="120" height="32" rx="7" fill="#0b1120" opacity="0.94"/>
+                    <text x="328" y="285" fill="#e6edf7">Adler 3 · Anflug</text>
+                    <text x="328" y="298" fill="#9aa8bf">Höhe 48 m · 00:04:10</text>
+                    <rect x="120" y="344" width="110" height="18" rx="6" fill="#0b1120" opacity="0.94"/>
+                    <text x="130" y="357" fill="#9aa8bf">Flugleiter-Standort</text>
+                  </g>
+                </svg>
+                <span class="mock-map-tag">3D-Live-Einsatzkarte</span>
+              </div>
+            </div>
+          </div>
+          <p class="mock-caption">Darstellung des Flugleiter-Modus (vereinfachte Produktansicht)</p>
+        </div>
+
+        <div class="container-narrow fl-text reveal">
+          <p>
+            Während der Pilot fliegt, behält der Flugleiter die Übersicht. Neue Einsätze
+            können angelegt, aktive Lagen angezeigt und relevante Informationen zentral
+            dargestellt werden. Die Kartenansicht hilft dabei, den Einsatzraum besser zu
+            verstehen.
+          </p>
+          <ul class="check-list check-list-cols">
+            <li>Aktive Einsätze und Aufgaben auf einen Blick</li>
+            <li>Startfreigaben verwalten</li>
+            <li>Drohnen und Besatzungen zuordnen</li>
+            <li>Kartenansicht des Einsatzraums</li>
+            <li>Direkter Zugriff auf Pilot- und Drohnen-Logbücher</li>
+            <li>Alle Flugbewegungen werden nachvollziehbar dokumentiert</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Drohnen, Akkus & Wartung ===== -->
+    <section class="section" id="technik">
+      <div class="container split">
+        <div class="split-text reveal">
+          <span class="section-tag">Geräteverwaltung</span>
+          <h2>Drohnen, Akkus und Wartung im Blick</h2>
+          <p>
+            Drone-Log verwaltet nicht nur Flüge, sondern auch die Technik dahinter.
+            Drohnen können mit Seriennummer, Registrierung, Gewicht, Status,
+            Betriebsstunden und Wartungsstand gepflegt werden. Zusätzlich können Akkus
+            mit Seriennummer, Kennung, Kapazität und Ladezyklen hinterlegt werden.
+          </p>
+          <p>
+            Wartungsintervalle helfen dabei, die Einsatzbereitschaft der Technik besser
+            nachzuvollziehen. Kleine und große Wartungen, Betriebsstunden, Akkudaten und
+            Wartungsprotokolle werden zentral sichtbar.
+          </p>
+          <p class="statement">
+            So wird aus einer einfachen Drohnenliste eine echte Geräteverwaltung
+            für die Einheit.
+          </p>
+          <ul class="tech-tags" aria-label="Erfasste Gerätedaten">
+            <li>Betriebsstunden</li>
+            <li>Kleine Wartung</li>
+            <li>Große Wartung</li>
+            <li>Zeit bis zur nächsten Wartung</li>
+            <li>Akkuverwaltung</li>
+            <li>Seriennummern</li>
+            <li>Akkukennung</li>
+            <li>Kapazität</li>
+            <li>Ladezyklen</li>
+            <li>Wartungsprotokoll</li>
+          </ul>
+        </div>
+
+        <!-- Produkt-Mockup: Wartungsansicht -->
         <div class="split-visual reveal" aria-hidden="true">
           <div class="mock-window">
             <div class="mock-titlebar">
               <span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span>
-              <span class="mock-title">Flugleiter-Dashboard</span>
+              <span class="mock-title">Geräteakte · DJI M30T „Adler 2"</span>
             </div>
-            <div class="mock-body">
-              <div class="mock-row mock-row-active">
-                <span class="mock-status status-live"></span>
-                <div class="mock-row-text">
-                  <strong>Einsatz „Personensuche Flussufer"</strong>
-                  <small>2 Drohnen aktiv · Pilot: M. Weber · Flugzeit 00:23:41</small>
+            <div class="mock-body maint-body">
+              <div class="maint-stat">
+                <div class="maint-stat-head">
+                  <span>Betriebsstunden</span>
+                  <strong>142:36 h</strong>
                 </div>
-                <span class="mock-tag tag-live">LIVE</span>
               </div>
-              <div class="mock-row">
-                <span class="mock-status status-live"></span>
-                <div class="mock-row-text">
-                  <strong>Einsatz „Brandnachschau Gewerbegebiet"</strong>
-                  <small>1 Drohne aktiv · Pilot: S. Krüger · Flugzeit 00:07:12</small>
+              <div class="maint-stat">
+                <div class="maint-stat-head">
+                  <span>Kleine Wartung</span>
+                  <strong class="maint-due">fällig in 7:24 h</strong>
                 </div>
-                <span class="mock-tag tag-live">LIVE</span>
+                <div class="maint-bar"><span style="width: 85%"></span></div>
               </div>
+              <div class="maint-stat">
+                <div class="maint-stat-head">
+                  <span>Große Wartung</span>
+                  <strong>fällig in 57:24 h</strong>
+                </div>
+                <div class="maint-bar"><span class="bar-ok" style="width: 43%"></span></div>
+              </div>
+
+              <p class="fl-panel-title">Akkus</p>
               <div class="mock-row">
                 <span class="mock-status status-ready"></span>
                 <div class="mock-row-text">
-                  <strong>DJI M30T – „Adler 2"</strong>
-                  <small>Einsatzbereit · Akku 98 % · Letzte Wartung: vor 6 Tagen</small>
+                  <strong>AKKU-02 · SN 4C9F-1182</strong>
+                  <small>5.880 mAh · 148 Ladezyklen</small>
                 </div>
-                <span class="mock-tag tag-ready">BEREIT</span>
+                <span class="mock-tag tag-ready">O. K.</span>
               </div>
               <div class="mock-row">
                 <span class="mock-status status-maint"></span>
                 <div class="mock-row-text">
-                  <strong>DJI Mavic 3T – „Adler 4"</strong>
-                  <small>Revision fällig in 3 Flugstunden</small>
+                  <strong>AKKU-05 · SN 4C9F-0761</strong>
+                  <small>5.880 mAh · 291 Ladezyklen</small>
                 </div>
-                <span class="mock-tag tag-maint">WARTUNG</span>
+                <span class="mock-tag tag-maint">PRÜFEN</span>
               </div>
+
+              <p class="fl-panel-title">Wartungsprotokoll</p>
+              <div class="mock-task"><span class="task-check task-done"></span> 02.07. Kleine Wartung · Propellertausch</div>
+              <div class="mock-task"><span class="task-check task-done"></span> 14.05. Firmware-Update · Sensorcheck</div>
             </div>
+          </div>
+          <p class="mock-caption">Darstellung der Wartungsansicht (vereinfachte Produktansicht)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Export & Nachweise ===== -->
+    <section class="section section-alt" id="export">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">Export &amp; Nachweise</span>
+          <h2>Einmal eintragen, mehrfach nutzen</h2>
+          <p>
+            Aus den erfassten Flügen entstehen nachvollziehbare Einträge für Pilotinnen
+            und Piloten, Drohnen, Einsätze und Wartungen. So müssen Daten nicht doppelt
+            gepflegt werden und Nachweise bleiben jederzeit auffindbar.
+          </p>
+        </div>
+
+        <div class="export-flow reveal" role="img" aria-label="Ein erfasster Flug fließt in Pilotenlogbuch, Drohnenlogbuch, Einsatzdokumentation und Wartungsdaten und kann exportiert werden">
+          <div class="flow-node flow-start">
+            <strong>1 Flug</strong>
+            <span>wird einmal erfasst</span>
+          </div>
+          <div class="flow-arrow" aria-hidden="true"></div>
+          <div class="flow-branches">
+            <div class="flow-node">Pilotenlogbuch</div>
+            <div class="flow-node">Drohnenlogbuch</div>
+            <div class="flow-node">Einsatzdokumentation</div>
+            <div class="flow-node">Wartungsdaten</div>
+          </div>
+          <div class="flow-arrow" aria-hidden="true"></div>
+          <div class="flow-node flow-end">
+            <strong>Export</strong>
+            <span>Nachweise ablegen oder vorlegen</span>
+          </div>
+        </div>
+
+        <div class="container-narrow export-text reveal">
+          <p>
+            Drone-Log hilft dabei, Flugnachweise, Drohnenlogbücher und
+            Einsatzdokumentationen sauber zu exportieren. So können Einheiten ihre
+            Dokumentation intern ablegen, für Ausbildungen nutzen oder bei Bedarf
+            schnell vorlegen.
+          </p>
+          <p class="export-sample">Ein Beispiel-Export zum Ansehen folgt an dieser Stelle.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Teamverwaltung & Rollen ===== -->
+    <section class="section" id="team">
+      <div class="container split split-reverse">
+        <div class="split-visual reveal" aria-hidden="true">
+          <div class="roles-card">
+            <p class="fl-panel-title">Rollen in Drone-Log</p>
+            <ul class="roles-list">
+              <li><span class="role-dot role-admin"></span> Admin</li>
+              <li><span class="role-dot role-fl"></span> Flugleiter</li>
+              <li><span class="role-dot role-pilot"></span> Pilot</li>
+              <li><span class="role-dot role-bild"></span> Bildauswerter</li>
+              <li><span class="role-dot role-ausb"></span> Ausbilder</li>
+              <li><span class="role-dot role-wart"></span> Wartungsverantwortlicher</li>
+              <li><span class="role-dot role-user"></span> Benutzer</li>
+            </ul>
+          </div>
+        </div>
+        <div class="split-text reveal">
+          <span class="section-tag">Teamverwaltung</span>
+          <h2>Teamverwaltung mit klaren Rollen</h2>
+          <p>
+            Drone-Log ist für ganze Einheiten gedacht. Benutzer können einer Gliederung
+            oder Organisation zugeordnet und mit passenden Rollen ausgestattet werden.
+            So kann klar geregelt werden, wer Flüge einträgt, wer Einsätze freigibt,
+            wer Drohnen verwaltet und wer administrative Aufgaben übernimmt.
+          </p>
+          <p class="statement">
+            Nicht jeder braucht Zugriff auf alles. Jede Person erhält genau die
+            Funktionen, die sie für ihre Aufgabe benötigt.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Mobile Nutzung ===== -->
+    <section class="section section-alt" id="mobil">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">Überall einsetzbar</span>
+          <h2>Auf Smartphone, Tablet und Desktop nutzbar</h2>
+          <p>
+            Drone-Log ist für den Einsatz auf Smartphone, Tablet und Desktop gedacht.
+            So können Flüge direkt vor Ort, im Einsatzfahrzeug, bei Übungen oder später
+            am Rechner dokumentiert und geprüft werden.
+          </p>
+        </div>
+        <div class="devices reveal">
+          <div class="device-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="8" y="3" width="8" height="18" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M11 18h2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Smartphone</h3>
+            <p>Flüge direkt vor Ort erfassen – am Startpunkt, im Fahrzeug oder bei der Übung.</p>
+          </div>
+          <div class="device-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M10.5 17.5h3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Tablet</h3>
+            <p>Vor Ort verwaltet der Flugleiter Einsätze und Freigaben auf dem Tablet.</p>
+          </div>
+          <div class="device-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M9 20h6m-3-4v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Desktop</h3>
+            <p>Nach dem Einsatz werden Flüge, Wartungen und Exporte bequem am Rechner geprüft und abgeschlossen.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== Von BOS'lern für BOS'ler ===== -->
-    <section class="section" id="ueber">
-      <div class="container split split-reverse">
+    <!-- ===== Aus der Praxis ===== -->
+    <section class="section" id="praxis">
+      <div class="container split">
+        <div class="split-text reveal">
+          <span class="section-tag">Von BOS'lern für BOS'ler</span>
+          <h2>Aus der Praxis für Drohneneinheiten entwickelt</h2>
+          <p>
+            Drone-Log wurde aus dem praktischen Drohnen- und Einsatzalltag heraus
+            entwickelt. Ziel ist kein allgemeines Flugbuch, sondern ein Werkzeug, das zu
+            Drohnenstaffeln, Einsatzleitungen, Ausbildung, Wartung und BOS-Strukturen passt.
+          </p>
+          <ul class="check-list">
+            <li>Entstanden in realen Einsätzen und Übungen</li>
+            <li>Abläufe, die zu BOS-Strukturen passen</li>
+            <li>Strukturierte Dokumentation und prüfbare Nachweise</li>
+            <li>Weiterentwicklung mit Feedback aus den Einheiten</li>
+          </ul>
+        </div>
         <div class="split-visual reveal" aria-hidden="true">
           <div class="quote-card">
             <svg class="quote-mark" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.2 5C4.8 6.6 3 9.2 3 12.6 3 16 5 18.5 7.9 18.5c2.3 0 4-1.7 4-4 0-2.2-1.6-3.8-3.7-3.8-.4 0-.8 0-1.1.2.4-2 1.9-3.8 3.9-4.9L7.2 5Zm10 0c-2.4 1.6-4.2 4.2-4.2 7.6 0 3.4 2 5.9 4.9 5.9 2.3 0 4-1.7 4-4 0-2.2-1.6-3.8-3.7-3.8-.4 0-.8 0-1.1.2.4-2 1.9-3.8 3.9-4.9L17.2 5Z"/></svg>
             <p>
               Wir standen selbst nachts am Einsatzort und haben Flugzeiten auf Papier
-              gekritzelt. Genau deshalb gibt es Drone-Log.de: ein Werkzeug, das im
+              gekritzelt. Genau deshalb gibt es Drone-Log: ein Werkzeug, das im
               Einsatz funktioniert – nicht nur am Schreibtisch.
             </p>
-            <span class="quote-author">Das Drone-Log-Team · aktive BOS-Drohnenpiloten</span>
+            <span class="quote-author">Das Drone-Log-Team · aktive Drohnenpiloten aus dem BOS-Umfeld</span>
           </div>
-        </div>
-        <div class="split-text reveal">
-          <span class="section-tag">Warum Drone-Log?</span>
-          <h2>Von BOS'lern für BOS'ler.<br>Entwickelt im echten Einsatz.</h2>
-          <p>
-            Drone-Log.de wurde nicht im Konferenzraum erdacht, sondern von aktiven
-            Drohnenpiloten aus Behörden und Hilfsorganisationen entwickelt und im
-            Einsatzalltag getestet. Jede Funktion beantwortet eine Frage, die sich
-            draußen wirklich stellt – für das bestmögliche Ergebnis, wenn es darauf ankommt.
-          </p>
-          <ul class="check-list">
-            <li>Praxiserprobt in realen Einsätzen und Übungen</li>
-            <li>Abläufe, die zu BOS-Strukturen passen</li>
-            <li>Dokumentation, die Prüfungen &amp; Nachweisen standhält</li>
-            <li>Ständige Weiterentwicklung mit Feedback aus den Staffeln</li>
-          </ul>
         </div>
       </div>
     </section>
 
-    <!-- ===== Ablauf ===== -->
-    <section class="section section-alt" id="ablauf">
-      <div class="container">
+    <!-- ===== Vertrauen & Transparenz ===== -->
+    <section class="section section-alt" id="vertrauen">
+      <div class="container container-narrow">
         <div class="section-head reveal">
-          <span class="section-tag">So funktioniert's</span>
-          <h2>In drei Schritten zur digitalen Staffel</h2>
+          <span class="section-tag">Vertrauen</span>
+          <h2>Transparent entwickelt. Für sensible Einsatzdaten gedacht.</h2>
+          <p>
+            Einsatz- und Flugdaten sind sensibel. Deshalb setzt Drone-Log auf klare
+            Strukturen, nachvollziehbare Dokumentation, Rollenrechte und
+            Exportmöglichkeiten.
+          </p>
         </div>
-        <div class="steps">
-          <div class="step reveal">
-            <span class="step-num">1</span>
-            <h3>Team anlegen</h3>
-            <p>Staffel registrieren, Mitglieder einladen, Qualifikationen und Rollen hinterlegen – in wenigen Minuten startklar.</p>
-          </div>
-          <div class="step reveal">
-            <span class="step-num">2</span>
-            <h3>Drohnen erfassen</h3>
-            <p>Geräte mit Kenndaten anlegen. Wartungen und Revisionen werden ab sofort automatisch mitgeführt.</p>
-          </div>
-          <div class="step reveal">
-            <span class="step-num">3</span>
-            <h3>Fliegen &amp; loggen</h3>
-            <p>Ausbildungs- und Einsatzflüge dokumentieren sich fast von selbst – im Piloten- und im Drohnenlogbuch zugleich.</p>
-          </div>
+        <div class="trust-grid reveal">
+          <div class="trust-item">Entwickelt aus dem BOS-Alltag</div>
+          <div class="trust-item">Klare Rollenrechte</div>
+          <div class="trust-item">Exportmöglichkeiten</div>
+          <div class="trust-item">Nachvollziehbare Dokumentation</div>
+          <div class="trust-item"><a href="mailto:kontakt@drone-log.de">Direkter Kontakt</a></div>
+          <div class="trust-item">Impressum &amp; Datenschutz im Footer</div>
         </div>
+        <p class="beta-note reveal">
+          Drone-Log befindet sich aktuell in der Weiterentwicklung und wird mit Feedback
+          aus der Praxis verbessert. Funktionen können getestet und Rückmeldungen direkt
+          eingebracht werden.
+        </p>
       </div>
     </section>
 
@@ -389,28 +775,44 @@
 
         <div class="faq-list reveal">
           <details class="faq-item">
-            <summary>Für wen ist Drone-Log.de gedacht?</summary>
-            <p>Für Behörden und Organisationen mit Sicherheitsaufgaben (BOS) – etwa Polizei, Feuerwehr, DRK, DLRG, ASB, THW, Johanniter und Malteser – sowie deren Drohnenstaffeln und Einzelpiloten.</p>
+            <summary>Ist Drone-Log kostenlos?</summary>
+            <p>Drone-Log kann aktuell getestet werden. Informationen zu möglichen späteren Modellen werden transparent bereitgestellt.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Für wen ist Drone-Log geeignet?</summary>
+            <p>Drone-Log richtet sich an Drohneneinheiten aus Feuerwehr, DLRG, THW, Rettungsdienst, Katastrophenschutz und weiteren BOS-nahen Organisationen.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Ist Drone-Log ein offizielles System einer bestimmten Organisation?</summary>
+            <p>Nein. Drone-Log ist ein eigenständiges Werkzeug und wird als geeignete Plattform für BOS-nahe Drohneneinheiten entwickelt. Genannte Organisationen beschreiben Zielgruppen und bedeuten keine automatische offizielle Partnerschaft.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Kann ich meine Daten exportieren?</summary>
+            <p>Ja. Drone-Log soll dabei helfen, Flüge, Logbücher, Drohnendaten und Einsatzdokumentationen exportierbar zu machen, damit Nachweise intern abgelegt oder weiterverwendet werden können.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Kann ich mehrere Drohnen verwalten?</summary>
+            <p>Ja. In Drone-Log können mehrere Drohnen mit Seriennummer, Registrierung, Gewicht, Status und Wartungsinformationen verwaltet werden.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Kann ich Akkus und Wartungen verwalten?</summary>
+            <p>Ja. Akkus können mit Seriennummer, Kennung, Kapazität und Ladezyklen erfasst werden. Zusätzlich können Wartungsintervalle und Wartungsprotokolle dokumentiert werden.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Funktioniert Drone-Log auf dem Handy oder Tablet?</summary>
+            <p>Ja. Drone-Log ist für Smartphone, Tablet und Desktop gedacht, damit es im Einsatz, bei Übungen und in der Nachbereitung genutzt werden kann.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Gibt es Rollen und Rechte?</summary>
+            <p>Ja. Benutzer können unterschiedliche Rollen erhalten, zum Beispiel Admin, Flugleiter, Pilot, Bildauswerter oder Wartungsverantwortlicher.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Was unterscheidet Drone-Log von Excel?</summary>
+            <p>Drone-Log bündelt Flüge, Drohnen, Akkus, Wartungen, Einsätze und Benutzer in einem System. Dadurch müssen Daten nicht mehrfach gepflegt werden und bleiben besser auffindbar.</p>
           </details>
           <details class="faq-item">
             <summary>Was unterscheidet Piloten- und Drohnenlogbuch?</summary>
-            <p>Das Pilotenlogbuch dokumentiert die Flugerfahrung einer Person über alle Geräte hinweg. Das Drohnenlogbuch führt die komplette Historie eines einzelnen Geräts – inklusive Betriebsstunden, Vorkommnissen und Wartungen. Drone-Log.de pflegt beide automatisch parallel.</p>
-          </details>
-          <details class="faq-item">
-            <summary>Kann ich auch Ausbildungsflüge dokumentieren?</summary>
-            <p>Ja. Ausbildungs- und Einsatzflüge werden getrennt erfasst und ausgewertet. So entstehen belastbare Nachweise für Ausbildungsstände, Prüfungen und interne Fortbildungen.</p>
-          </details>
-          <details class="faq-item">
-            <summary>Wie funktioniert die Wartungsdokumentation?</summary>
-            <p>Wartungen, Reparaturen und Revisionen werden direkt im Tool erfasst und dem jeweiligen Gerät zugeordnet. Anstehende Prüfungen und Intervalle sehen Sie frühzeitig im Drohnenmanagement.</p>
-          </details>
-          <details class="faq-item">
-            <summary>Was kann die Teamverwaltung?</summary>
-            <p>Sie verwalten Mitglieder, Rollen und Rechte sowie die vorhandenen Qualifikationen und Berechtigungsnachweise jedes Teammitglieds. Damit ist jederzeit klar, wer wofür ausgebildet und einsatzbereit ist.</p>
-          </details>
-          <details class="faq-item">
-            <summary>Wie starte ich mit Drone-Log.de?</summary>
-            <p>Einfach oben rechts auf „Zum Tool" klicken, registrieren und loslegen – ohne Installation, direkt im Browser.</p>
+            <p>Das Pilotenlogbuch dokumentiert die Flugerfahrung einer Person über alle Geräte hinweg. Das Drohnenlogbuch führt die Historie eines einzelnen Geräts – inklusive Betriebsstunden, Wartungen und Vorkommnissen. Drone-Log pflegt beide aus demselben Flugeintrag.</p>
           </details>
         </div>
       </div>
@@ -419,12 +821,15 @@
     <!-- ===== CTA ===== -->
     <section class="cta-final">
       <div class="container reveal">
-        <h2>Bereit für lückenlose Dokumentation?</h2>
-        <p>Starten Sie jetzt – und machen Sie Papier-Logbücher zur Vergangenheit.</p>
-        <a href="https://drone-log.de" class="btn btn-primary btn-lg" target="_blank" rel="noopener">
-          Jetzt Drone-Log.de öffnen
-          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m0 0-6-6m6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
+        <h2>Bereit für mehr Überblick?</h2>
+        <p>Testen Sie Drone-Log mit Ihrer Einheit – direkt im Browser, ohne Installation.</p>
+        <div class="hero-cta cta-center">
+          <a href="https://drone-log.de" class="btn btn-primary btn-lg" target="_blank" rel="noopener">
+            Kostenlos testen
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m0 0-6-6m6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="mailto:kontakt@drone-log.de" class="btn btn-ghost btn-lg">Kontakt aufnehmen</a>
+        </div>
       </div>
     </section>
   </main>
@@ -442,16 +847,17 @@
             <rect x="18" y="18" width="12" height="12" rx="3" fill="currentColor"/>
             <path d="M14.5 14.5L19 19M33.5 14.5L29 19M14.5 33.5L19 29M33.5 33.5L29 29" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
           </svg>
-          <span class="brand-name">Drone<span class="brand-accent">-Log</span>.de</span>
+          <span class="brand-name">Drone<span class="brand-accent">-Log</span></span>
         </a>
-        <p>Das digitale Drohnenfluglogbuch für Behörden und Organisationen mit Sicherheitsaufgaben.</p>
+        <p>Die digitale Verwaltungsplattform für BOS-Drohneneinheiten.</p>
       </div>
       <nav class="footer-nav" aria-label="Footer-Navigation">
         <div class="footer-col">
           <h4>Produkt</h4>
           <a href="#funktionen">Funktionen</a>
           <a href="#flugleiter">Flugleiter-Modus</a>
-          <a href="#ablauf">So funktioniert's</a>
+          <a href="#technik">Technik &amp; Wartung</a>
+          <a href="#export">Export &amp; Nachweise</a>
           <a href="#faq">FAQ</a>
         </div>
         <div class="footer-col">
@@ -460,13 +866,18 @@
           <a href="datenschutz.html">Datenschutz</a>
         </div>
         <div class="footer-col">
-          <h4>Loslegen</h4>
+          <h4>Kontakt</h4>
+          <a href="mailto:kontakt@drone-log.de">kontakt@drone-log.de</a>
           <a href="https://drone-log.de" target="_blank" rel="noopener">Zum Tool →</a>
         </div>
       </nav>
     </div>
     <div class="container footer-bottom">
-      <span>© <span id="year">2026</span> Drone-Log.de – Alle Rechte vorbehalten.</span>
+      <p class="footer-disclaimer">
+        Drone-Log ist ein eigenständiges Projekt und keine offizielle Plattform einer
+        genannten BOS-Organisation, sofern nicht ausdrücklich angegeben.
+      </p>
+      <span>© <span id="year">2026</span> Drone-Log – Alle Rechte vorbehalten.</span>
     </div>
   </footer>
 

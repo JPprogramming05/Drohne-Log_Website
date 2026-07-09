@@ -1,8 +1,8 @@
-# Drone-Log.de – Info-Website
+# Drone-Log – Info-Website
 
-Statische Landingpage für **Drone-Log.de** – das digitale Drohnenfluglogbuch für
-Behörden und Organisationen mit Sicherheitsaufgaben (BOS): Polizei, Feuerwehr,
-DRK, DLRG, ASB und mehr.
+Statische Landingpage für **Drone-Log** – die digitale Verwaltungsplattform für
+BOS-Drohneneinheiten: Einsatzkoordination, Flugbuch, Drohnen-, Akku- und
+Wartungsverwaltung, Teamverwaltung mit Rollen sowie Export von Nachweisen.
 
 ## Inhalt
 
