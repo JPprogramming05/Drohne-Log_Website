@@ -33,6 +33,23 @@ python3 -m http.server 8000
 # → http://localhost:8000
 ```
 
+## Deployment (GitHub Pages)
+
+Das Repository enthält einen fertigen Workflow
+(`.github/workflows/deploy-pages.yml`), der die Seite bei jedem Push auf
+`main` automatisch auf GitHub Pages veröffentlicht.
+
+**Einmalig einstellen:** Settings → Pages → *Build and deployment* →
+Source: **„GitHub Actions"** (nicht „Deploy from a branch").
+
+Hintergrund: Bei „Deploy from a branch" jagt GitHub die Seite durch einen
+Jekyll-Build, der für diese fertige statische Seite unnötig ist und
+fehlschlagen kann. Die zusätzliche `.nojekyll`-Datei im Root schaltet
+Jekyll auch für diesen Fall ab. Die Custom Domain (`CNAME`) bleibt von
+alledem unberührt.
+
+Manuell deployen: Actions → „Deploy to GitHub Pages" → *Run workflow*.
+
 ## Vor dem Livegang
 
 1. Impressum in `impressum.html` ausfüllen (§ 5 DDG)
