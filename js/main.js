@@ -52,6 +52,19 @@
     revealEls.forEach((el) => el.classList.add("visible"));
   }
 
+  // Hero-Drohne: blendet beim Scrollen nach und nach aus
+  const heroDrone = document.getElementById("heroDrone");
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (heroDrone && !reducedMotion) {
+    const fadeDrone = () => {
+      const f = Math.min(1, window.scrollY / 550);
+      heroDrone.style.opacity = String(1 - f);
+      heroDrone.style.transform = `translateY(${f * -70}px) scale(${1 - f * 0.18})`;
+    };
+    window.addEventListener("scroll", fadeDrone, { passive: true });
+    fadeDrone();
+  }
+
   // Aktuelles Jahr im Footer
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
