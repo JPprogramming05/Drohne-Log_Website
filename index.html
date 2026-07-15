@@ -102,62 +102,24 @@
           </div>
         </div>
 
-        <!-- 3D-Drohne als Opener (blendet beim Scrollen aus) -->
+        <!-- 3D-Modell DJI Matrice 400 (blendet beim Scrollen aus) -->
         <div class="hero-visual" id="heroDrone" aria-hidden="true">
-          <div class="drone3d">
-            <svg viewBox="0 0 560 440" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <linearGradient id="dBody" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0" stop-color="#2a3a5e"/>
-                  <stop offset="1" stop-color="#131c31"/>
-                </linearGradient>
-                <linearGradient id="dArm" x1="0" y1="0" x2="1" y2="0">
-                  <stop offset="0" stop-color="#3a4c74"/>
-                  <stop offset="1" stop-color="#1a2540"/>
-                </linearGradient>
-                <radialGradient id="dGlow" cx="0.5" cy="0.5" r="0.5">
-                  <stop offset="0" stop-color="#ff7a1a" stop-opacity="0.35"/>
-                  <stop offset="1" stop-color="#ff7a1a" stop-opacity="0"/>
-                </radialGradient>
-              </defs>
-              <ellipse cx="280" cy="392" rx="185" ry="26" fill="#000" opacity="0.35"/>
-              <ellipse cx="280" cy="230" rx="250" ry="160" fill="url(#dGlow)"/>
-              <!-- Rotoren hinten -->
-              <ellipse cx="105" cy="140" rx="86" ry="20" fill="none" stroke="#9aa8bf" stroke-width="2.5" opacity="0.55"/>
-              <ellipse cx="455" cy="140" rx="86" ry="20" fill="none" stroke="#9aa8bf" stroke-width="2.5" opacity="0.55"/>
-              <ellipse cx="105" cy="140" rx="52" ry="11" fill="none" stroke="#e6edf7" stroke-width="1.4" opacity="0.35"/>
-              <ellipse cx="455" cy="140" rx="52" ry="11" fill="none" stroke="#e6edf7" stroke-width="1.4" opacity="0.35"/>
-              <circle cx="105" cy="140" r="9" fill="#1a2540" stroke="#3a4c74" stroke-width="2"/>
-              <circle cx="455" cy="140" r="9" fill="#1a2540" stroke="#3a4c74" stroke-width="2"/>
-              <!-- Arme hinten -->
-              <path d="M118 148 L 232 208 L 244 190 L 128 132 Z" fill="url(#dArm)"/>
-              <path d="M442 148 L 328 208 L 316 190 L 432 132 Z" fill="url(#dArm)"/>
-              <!-- Arme vorne -->
-              <path d="M128 300 L 240 240 L 252 258 L 142 316 Z" fill="url(#dArm)"/>
-              <path d="M432 300 L 320 240 L 308 258 L 418 316 Z" fill="url(#dArm)"/>
-              <!-- Körper -->
-              <path d="M212 196 L 348 196 L 372 232 L 348 274 L 212 274 L 188 232 Z" fill="url(#dBody)" stroke="#3a4c74" stroke-width="2"/>
-              <path d="M212 196 L 348 196 L 360 214 L 200 214 Z" fill="#33456b"/>
-              <rect x="244" y="228" width="72" height="14" rx="7" fill="#0b1120"/>
-              <circle cx="258" cy="235" r="4" fill="#34d399"/>
-              <circle cx="302" cy="235" r="4" fill="#ff7a1a"/>
-              <!-- Gimbal-Kamera -->
-              <path d="M262 274 L 298 274 L 292 300 L 268 300 Z" fill="#1a2540" stroke="#3a4c74" stroke-width="2"/>
-              <circle cx="280" cy="312" r="18" fill="#0b1120" stroke="#3a4c74" stroke-width="2.5"/>
-              <circle cx="280" cy="312" r="9" fill="#122033" stroke="#6fa8ff" stroke-width="2"/>
-              <circle cx="277" cy="309" r="3" fill="#9fc5ff"/>
-              <!-- Rotoren vorne -->
-              <ellipse cx="118" cy="322" rx="96" ry="23" fill="none" stroke="#e6edf7" stroke-width="3" opacity="0.75"/>
-              <ellipse cx="442" cy="322" rx="96" ry="23" fill="none" stroke="#e6edf7" stroke-width="3" opacity="0.75"/>
-              <ellipse cx="118" cy="322" rx="58" ry="13" fill="none" stroke="#e6edf7" stroke-width="1.6" opacity="0.4"/>
-              <ellipse cx="442" cy="322" rx="58" ry="13" fill="none" stroke="#e6edf7" stroke-width="1.6" opacity="0.4"/>
-              <circle cx="118" cy="322" r="11" fill="#1a2540" stroke="#ff7a1a" stroke-width="2.5"/>
-              <circle cx="442" cy="322" r="11" fill="#1a2540" stroke="#ff7a1a" stroke-width="2.5"/>
-              <!-- Positionsleuchten -->
-              <circle cx="118" cy="322" r="4" fill="#ff5a5a"/>
-              <circle cx="442" cy="322" r="4" fill="#34d399"/>
-            </svg>
-          </div>
+          <model-viewer
+            class="drone3d"
+            src="assets/models/dji-matrice-400.glb"
+            alt="3D-Modell einer DJI Matrice 400"
+            auto-rotate
+            rotation-per-second="9deg"
+            camera-controls
+            disable-zoom
+            disable-pan
+            interaction-prompt="none"
+            camera-orbit="30deg 72deg 105%"
+            exposure="0.95"
+            shadow-intensity="0.9"
+            shadow-softness="0.8"
+            loading="eager">
+          </model-viewer>
         </div>
       </div>
     </section>
@@ -828,5 +790,6 @@
   </footer>
 
   <script src="js/main.js?v=3"></script>
+  <script type="module" src="js/vendor/model-viewer.min.js"></script>
 </body>
 </html>
