@@ -50,6 +50,17 @@ alledem unberührt.
 
 Manuell deployen: Actions → „Deploy to GitHub Pages" → *Run workflow*.
 
+## 3D-Modell im Hero
+
+`assets/models/dji-matrice-400.glb` wurde aus DJIs offiziellem CAD-Modell
+(STEP-Datei, dl.djicdn.com) konvertiert: tesselliert mit OpenCascade,
+auf ~140.000 Dreiecke reduziert (2,6 MB) und als glTF-Binary exportiert.
+Angezeigt wird es über die lokal gehostete `<model-viewer>`-Bibliothek
+(`js/vendor/model-viewer.min.js`, Google, BSD-3-Clause).
+
+Hinweis: Das Originalmodell stammt von DJI. Die Nutzungsbedingungen für
+die Verwendung auf der Website sollten mit DJI geklärt sein.
+
 ## Vor dem Livegang
 
 1. Impressum in `impressum.html` ausfüllen (§ 5 DDG)
