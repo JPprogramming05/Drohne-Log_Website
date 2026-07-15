@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=3">
 </head>
 <body>
 
@@ -86,78 +86,77 @@
             <a href="#flugleiter" class="btn btn-ghost btn-lg">Demo ansehen</a>
             <a href="mailto:kontakt@drone-log.de" class="btn btn-ghost btn-lg">Kontakt aufnehmen</a>
           </div>
-          <ul class="hero-modules reveal delay-4" aria-label="Module der Plattform">
-            <li>Einsatzkoordination</li>
-            <li>Flugbuch &amp; Flugnachweise</li>
-            <li>Drohnenverwaltung</li>
-            <li>Wartungsverwaltung</li>
-            <li>Akkuverwaltung</li>
-            <li>Teamverwaltung</li>
-            <li>Rollen &amp; Rechte</li>
-            <li>Export von Nachweisen</li>
-            <li>Flugleiter-Modus</li>
-          </ul>
+          <div class="hero-modules-box reveal delay-4">
+            <p class="hero-modules-title">Alles an einem Ort</p>
+            <ul class="hero-modules" aria-label="Module der Plattform">
+              <li>Einsatzkoordination</li>
+              <li>Flugbuch &amp; Flugnachweise</li>
+              <li>Drohnenverwaltung</li>
+              <li>Wartungsverwaltung</li>
+              <li>Akkuverwaltung</li>
+              <li>Teamverwaltung</li>
+              <li>Rollen &amp; Rechte</li>
+              <li>Export von Nachweisen</li>
+              <li>Flugleiter-Modus</li>
+            </ul>
+          </div>
         </div>
 
-        <!-- Produkt-Mockup: Flugleiter-Modus (Kompaktansicht) -->
-        <div class="hero-visual reveal delay-3" aria-hidden="true">
-          <div class="mock-window mock-hero">
-            <div class="mock-titlebar">
-              <span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span>
-              <span class="mock-title">Flugleiter-Modus · Live-Lage</span>
-            </div>
-            <div class="mock-map">
-              <svg viewBox="0 0 520 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
-                <defs>
-                  <linearGradient id="terrain" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0" stop-color="#122033"/>
-                    <stop offset="1" stop-color="#0d1626"/>
-                  </linearGradient>
-                </defs>
-                <rect width="520" height="300" fill="url(#terrain)"/>
-                <path d="M0 210 C 90 190, 150 240, 240 225 S 420 250, 520 215 L 520 300 L 0 300 Z" fill="#0f2438" opacity="0.9"/>
-                <path d="M0 218 C 90 198, 150 248, 240 233 S 420 258, 520 223" fill="none" stroke="#1d4ed8" stroke-width="10" opacity="0.35"/>
-                <path d="M60 0 L 140 300 M 300 0 L 250 300 M 0 90 L 520 60" stroke="#233650" stroke-width="7" opacity="0.7"/>
-                <path d="M60 0 L 140 300 M 300 0 L 250 300 M 0 90 L 520 60" stroke="#0b1120" stroke-width="1.5" stroke-dasharray="8 10" opacity="0.9"/>
-                <circle cx="355" cy="150" r="74" fill="#ff7a1a" opacity="0.08"/>
-                <circle cx="355" cy="150" r="74" fill="none" stroke="#ff7a1a" stroke-width="1.5" stroke-dasharray="6 6" opacity="0.7"/>
-                <path d="M150 220 Q 220 130 355 150" fill="none" stroke="#34d399" stroke-width="2" stroke-dasharray="7 6"/>
-                <g transform="translate(355 150)">
-                  <rect x="-7" y="-7" width="14" height="14" rx="3.5" fill="#34d399"/>
-                  <path d="M-11 -11 L -7 -7 M 11 -11 L 7 -7 M -11 11 L -7 7 M 11 11 L 7 7" stroke="#34d399" stroke-width="2.4" stroke-linecap="round"/>
-                </g>
-                <g transform="translate(150 220)">
-                  <circle r="5.5" fill="#3b82f6"/>
-                  <circle r="11" fill="none" stroke="#3b82f6" stroke-width="1.5" opacity="0.5"/>
-                </g>
-                <g font-family="Inter, sans-serif" font-size="10.5" font-weight="600">
-                  <rect x="374" y="108" width="118" height="30" rx="7" fill="#0b1120" opacity="0.92"/>
-                  <text x="384" y="121" fill="#e6edf7">Adler 2 · in der Luft</text>
-                  <text x="384" y="132.5" fill="#9aa8bf">Flugzeit 00:23:41</text>
-                  <rect x="96" y="234" width="96" height="18" rx="6" fill="#0b1120" opacity="0.92"/>
-                  <text x="106" y="246.5" fill="#9aa8bf">Startpunkt · FL</text>
-                </g>
-              </svg>
-              <span class="mock-map-tag">3D-Einsatzkarte</span>
-            </div>
-            <div class="mock-body">
-              <div class="mock-row mock-row-active">
-                <span class="mock-status status-live"></span>
-                <div class="mock-row-text">
-                  <strong>Einsatz „Personensuche Flussufer"</strong>
-                  <small>2 Drohnen aktiv · 3 offene Aufgaben</small>
-                </div>
-                <span class="mock-tag tag-live">LIVE</span>
-              </div>
-              <div class="mock-row">
-                <span class="mock-status status-ready"></span>
-                <div class="mock-row-text">
-                  <strong>DJI M30T „Adler 2"</strong>
-                  <small>Einsatzbereit · Akku 98 % · Wartung o. k.</small>
-                </div>
-                <span class="mock-tag tag-ready">BEREIT</span>
-              </div>
-            </div>
+        <!-- 3D-Drohne als Opener (blendet beim Scrollen aus) -->
+        <div class="hero-visual" id="heroDrone" aria-hidden="true">
+          <div class="drone3d">
+            <svg viewBox="0 0 560 440" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="dBody" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#2a3a5e"/>
+                  <stop offset="1" stop-color="#131c31"/>
+                </linearGradient>
+                <linearGradient id="dArm" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0" stop-color="#3a4c74"/>
+                  <stop offset="1" stop-color="#1a2540"/>
+                </linearGradient>
+                <radialGradient id="dGlow" cx="0.5" cy="0.5" r="0.5">
+                  <stop offset="0" stop-color="#ff7a1a" stop-opacity="0.35"/>
+                  <stop offset="1" stop-color="#ff7a1a" stop-opacity="0"/>
+                </radialGradient>
+              </defs>
+              <ellipse cx="280" cy="392" rx="185" ry="26" fill="#000" opacity="0.35"/>
+              <ellipse cx="280" cy="230" rx="250" ry="160" fill="url(#dGlow)"/>
+              <!-- Rotoren hinten -->
+              <ellipse cx="105" cy="140" rx="86" ry="20" fill="none" stroke="#9aa8bf" stroke-width="2.5" opacity="0.55"/>
+              <ellipse cx="455" cy="140" rx="86" ry="20" fill="none" stroke="#9aa8bf" stroke-width="2.5" opacity="0.55"/>
+              <ellipse cx="105" cy="140" rx="52" ry="11" fill="none" stroke="#e6edf7" stroke-width="1.4" opacity="0.35"/>
+              <ellipse cx="455" cy="140" rx="52" ry="11" fill="none" stroke="#e6edf7" stroke-width="1.4" opacity="0.35"/>
+              <circle cx="105" cy="140" r="9" fill="#1a2540" stroke="#3a4c74" stroke-width="2"/>
+              <circle cx="455" cy="140" r="9" fill="#1a2540" stroke="#3a4c74" stroke-width="2"/>
+              <!-- Arme hinten -->
+              <path d="M118 148 L 232 208 L 244 190 L 128 132 Z" fill="url(#dArm)"/>
+              <path d="M442 148 L 328 208 L 316 190 L 432 132 Z" fill="url(#dArm)"/>
+              <!-- Arme vorne -->
+              <path d="M128 300 L 240 240 L 252 258 L 142 316 Z" fill="url(#dArm)"/>
+              <path d="M432 300 L 320 240 L 308 258 L 418 316 Z" fill="url(#dArm)"/>
+              <!-- Körper -->
+              <path d="M212 196 L 348 196 L 372 232 L 348 274 L 212 274 L 188 232 Z" fill="url(#dBody)" stroke="#3a4c74" stroke-width="2"/>
+              <path d="M212 196 L 348 196 L 360 214 L 200 214 Z" fill="#33456b"/>
+              <rect x="244" y="228" width="72" height="14" rx="7" fill="#0b1120"/>
+              <circle cx="258" cy="235" r="4" fill="#34d399"/>
+              <circle cx="302" cy="235" r="4" fill="#ff7a1a"/>
+              <!-- Gimbal-Kamera -->
+              <path d="M262 274 L 298 274 L 292 300 L 268 300 Z" fill="#1a2540" stroke="#3a4c74" stroke-width="2"/>
+              <circle cx="280" cy="312" r="18" fill="#0b1120" stroke="#3a4c74" stroke-width="2.5"/>
+              <circle cx="280" cy="312" r="9" fill="#122033" stroke="#6fa8ff" stroke-width="2"/>
+              <circle cx="277" cy="309" r="3" fill="#9fc5ff"/>
+              <!-- Rotoren vorne -->
+              <ellipse cx="118" cy="322" rx="96" ry="23" fill="none" stroke="#e6edf7" stroke-width="3" opacity="0.75"/>
+              <ellipse cx="442" cy="322" rx="96" ry="23" fill="none" stroke="#e6edf7" stroke-width="3" opacity="0.75"/>
+              <ellipse cx="118" cy="322" rx="58" ry="13" fill="none" stroke="#e6edf7" stroke-width="1.6" opacity="0.4"/>
+              <ellipse cx="442" cy="322" rx="58" ry="13" fill="none" stroke="#e6edf7" stroke-width="1.6" opacity="0.4"/>
+              <circle cx="118" cy="322" r="11" fill="#1a2540" stroke="#ff7a1a" stroke-width="2.5"/>
+              <circle cx="442" cy="322" r="11" fill="#1a2540" stroke="#ff7a1a" stroke-width="2.5"/>
+              <!-- Positionsleuchten -->
+              <circle cx="118" cy="322" r="4" fill="#ff5a5a"/>
+              <circle cx="442" cy="322" r="4" fill="#34d399"/>
+            </svg>
           </div>
         </div>
       </div>
@@ -230,10 +229,7 @@
     <!-- ===== Zielgruppen ===== -->
     <section class="orgs" id="bos">
       <div class="container">
-        <p class="orgs-title">
-          Geeignet für Drohneneinheiten aus Feuerwehr, DLRG, THW, Rettungsdienst,
-          Katastrophenschutz und weiteren BOS-nahen Organisationen
-        </p>
+        <h2 class="orgs-heading">Gemacht für UAV-Einheiten der BOS</h2>
       </div>
       <div class="orgs-marquee" aria-label="Beispiele für Zielgruppen von Drone-Log">
         <div class="marquee-track">
@@ -268,12 +264,6 @@
             <span class="org-mark mark-bergwacht">BERGWACHT</span>
           </div>
         </div>
-      </div>
-      <div class="container">
-        <p class="orgs-note">
-          Die genannten Organisationen beschreiben Zielgruppen – keine offiziellen
-          Partnerschaften oder Referenzen.
-        </p>
       </div>
     </section>
 
@@ -362,130 +352,81 @@
 
     <!-- ===== Flugleiter-Modus ===== -->
     <section class="section section-alt" id="flugleiter">
-      <div class="container">
-        <div class="section-head reveal">
+      <div class="container split">
+        <!-- Produkt-Mockup: Flugleiter-Modus (kompakt, links) -->
+        <div class="split-visual reveal fx-left" aria-hidden="true">
+          <div class="mock-window">
+            <div class="mock-titlebar">
+              <span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span>
+              <span class="mock-title">Flugleiter-Modus</span>
+              <div class="mock-toolbar">
+                <span class="mock-btn mock-btn-accent">+ Neuer Einsatz</span>
+              </div>
+            </div>
+            <div class="mock-map">
+              <svg viewBox="0 0 520 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                  <linearGradient id="terrain" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#122033"/>
+                    <stop offset="1" stop-color="#0d1626"/>
+                  </linearGradient>
+                </defs>
+                <rect width="520" height="300" fill="url(#terrain)"/>
+                <path d="M0 210 C 90 190, 150 240, 240 225 S 420 250, 520 215 L 520 300 L 0 300 Z" fill="#0f2438" opacity="0.9"/>
+                <path d="M0 218 C 90 198, 150 248, 240 233 S 420 258, 520 223" fill="none" stroke="#1d4ed8" stroke-width="10" opacity="0.35"/>
+                <path d="M60 0 L 140 300 M 300 0 L 250 300 M 0 90 L 520 60" stroke="#233650" stroke-width="7" opacity="0.7"/>
+                <path d="M60 0 L 140 300 M 300 0 L 250 300 M 0 90 L 520 60" stroke="#0b1120" stroke-width="1.5" stroke-dasharray="8 10" opacity="0.9"/>
+                <circle cx="355" cy="150" r="74" fill="#ff7a1a" opacity="0.08"/>
+                <circle cx="355" cy="150" r="74" fill="none" stroke="#ff7a1a" stroke-width="1.5" stroke-dasharray="6 6" opacity="0.7"/>
+                <text x="355" y="66" fill="#ff9c4d" font-family="Inter, sans-serif" font-size="10.5" font-weight="700" text-anchor="middle">EINSATZRAUM</text>
+                <path d="M150 220 Q 220 130 355 150" fill="none" stroke="#34d399" stroke-width="2" stroke-dasharray="7 6"/>
+                <g transform="translate(355 150)">
+                  <rect x="-7" y="-7" width="14" height="14" rx="3.5" fill="#34d399"/>
+                  <path d="M-11 -11 L -7 -7 M 11 -11 L 7 -7 M -11 11 L -7 7 M 11 11 L 7 7" stroke="#34d399" stroke-width="2.4" stroke-linecap="round"/>
+                </g>
+                <g transform="translate(150 220)">
+                  <circle r="5.5" fill="#e6edf7"/>
+                  <circle r="11" fill="none" stroke="#e6edf7" stroke-width="1.5" opacity="0.5"/>
+                </g>
+                <g font-family="Inter, sans-serif" font-size="10.5" font-weight="600">
+                  <rect x="374" y="108" width="118" height="30" rx="7" fill="#0b1120" opacity="0.92"/>
+                  <text x="384" y="121" fill="#e6edf7">Adler 2 · Wärmebild</text>
+                  <text x="384" y="132.5" fill="#9aa8bf">Höhe 62 m · 00:23:41</text>
+                  <rect x="96" y="234" width="112" height="18" rx="6" fill="#0b1120" opacity="0.92"/>
+                  <text x="106" y="246.5" fill="#9aa8bf">Flugleiter-Standort</text>
+                </g>
+              </svg>
+            </div>
+            <div class="mock-body">
+              <div class="mock-row mock-row-active">
+                <span class="mock-status status-live"></span>
+                <div class="mock-row-text">
+                  <strong>Einsatz „Personensuche Flussufer"</strong>
+                  <small>2 Drohnen aktiv · 3 offene Aufgaben</small>
+                </div>
+                <span class="mock-tag tag-live">LIVE</span>
+              </div>
+              <div class="mock-row">
+                <span class="mock-status status-ready"></span>
+                <div class="mock-row-text">
+                  <strong>DJI M30T „Adler 2"</strong>
+                  <small>Einsatzbereit · Akku 98 % · Wartung o. k.</small>
+                </div>
+                <span class="mock-tag tag-ready">BEREIT</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="split-text reveal">
           <span class="section-tag">Flugleiter-Modus</span>
-          <h2>Flugleiter-Modus: Überblick im Einsatz behalten</h2>
+          <h2>Überblick im Einsatz behalten</h2>
           <p>
             Der Flugleiter-Modus unterstützt die verantwortliche Person dabei, Einsätze zu
             koordinieren, Startfreigaben zu verwalten und den Überblick über aktive Drohnen,
             Aufgaben und Einsatzlagen zu behalten.
           </p>
-        </div>
-
-        <!-- Produkt-Mockup: Flugleiter-Dashboard (Großansicht) -->
-        <div class="fl-mock reveal" aria-hidden="true">
-          <div class="mock-window mock-wide">
-            <div class="mock-titlebar">
-              <span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span>
-              <span class="mock-title">Drone-Log · Flugleiter-Modus</span>
-              <div class="mock-toolbar">
-                <span class="mock-btn mock-btn-accent">+ Neuer Einsatz</span>
-                <span class="mock-btn">Pilot-Logbücher</span>
-                <span class="mock-btn">Drohnen-Logbuch</span>
-              </div>
-            </div>
-            <div class="fl-layout">
-              <div class="fl-sidebar">
-                <p class="fl-panel-title">Aktive Einsätze</p>
-                <div class="mock-row mock-row-active">
-                  <span class="mock-status status-live"></span>
-                  <div class="mock-row-text">
-                    <strong>Personensuche Flussufer</strong>
-                    <small>2 Drohnen · seit 00:23:41</small>
-                  </div>
-                  <span class="mock-tag tag-live">LIVE</span>
-                </div>
-                <div class="mock-row">
-                  <span class="mock-status status-live"></span>
-                  <div class="mock-row-text">
-                    <strong>Brandnachschau Gewerbegebiet</strong>
-                    <small>1 Drohne · seit 00:07:12</small>
-                  </div>
-                  <span class="mock-tag tag-live">LIVE</span>
-                </div>
-
-                <p class="fl-panel-title">Aufgaben</p>
-                <div class="mock-task"><span class="task-check task-done"></span> Startfreigabe Adler 2 erteilt</div>
-                <div class="mock-task"><span class="task-check"></span> Uferbereich Nord abfliegen</div>
-                <div class="mock-task"><span class="task-check"></span> Wärmebild an Einsatzleitung</div>
-
-                <p class="fl-panel-title">Flugzeuge</p>
-                <div class="mock-row">
-                  <span class="mock-status status-live"></span>
-                  <div class="mock-row-text">
-                    <strong>DJI M30T „Adler 2"</strong>
-                    <small>In der Luft · Akku 74 %</small>
-                  </div>
-                </div>
-                <div class="mock-row">
-                  <span class="mock-status status-ready"></span>
-                  <div class="mock-row-text">
-                    <strong>DJI Mavic 3T „Adler 4"</strong>
-                    <small>Einsatzbereit · Akku 98 %</small>
-                  </div>
-                </div>
-              </div>
-
-              <div class="fl-map">
-                <svg viewBox="0 0 640 460" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
-                  <defs>
-                    <linearGradient id="terrain2" x1="0" y1="0" x2="1" y2="1">
-                      <stop offset="0" stop-color="#13233a"/>
-                      <stop offset="1" stop-color="#0c1524"/>
-                    </linearGradient>
-                  </defs>
-                  <rect width="640" height="460" fill="url(#terrain2)"/>
-                  <path d="M0 320 C 120 290, 200 370, 330 345 S 540 380, 640 330 L 640 460 L 0 460 Z" fill="#0f2438"/>
-                  <path d="M0 330 C 120 300, 200 380, 330 355 S 540 390, 640 340" fill="none" stroke="#1d4ed8" stroke-width="14" opacity="0.35"/>
-                  <path d="M90 0 L 190 460 M 400 0 L 330 460 M 0 130 L 640 90 M 0 230 L 640 260" stroke="#233650" stroke-width="9" opacity="0.7"/>
-                  <path d="M90 0 L 190 460 M 400 0 L 330 460 M 0 130 L 640 90 M 0 230 L 640 260" stroke="#0b1120" stroke-width="1.5" stroke-dasharray="9 11" opacity="0.9"/>
-                  <rect x="440" y="40" width="60" height="42" rx="4" fill="#1a2540"/>
-                  <rect x="510" y="52" width="44" height="30" rx="4" fill="#1a2540"/>
-                  <rect x="60" y="60" width="46" height="34" rx="4" fill="#1a2540"/>
-                  <circle cx="430" cy="205" r="98" fill="#ff7a1a" opacity="0.07"/>
-                  <circle cx="430" cy="205" r="98" fill="none" stroke="#ff7a1a" stroke-width="1.6" stroke-dasharray="7 7" opacity="0.75"/>
-                  <text x="430" y="102" fill="#ff9c4d" font-family="Inter, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle">EINSATZRAUM</text>
-                  <path d="M175 330 Q 260 200 430 205" fill="none" stroke="#34d399" stroke-width="2.2" stroke-dasharray="8 7"/>
-                  <path d="M430 205 Q 470 260 455 300" fill="none" stroke="#34d399" stroke-width="2.2" stroke-dasharray="8 7" opacity="0.6"/>
-                  <g transform="translate(430 205)">
-                    <rect x="-8" y="-8" width="16" height="16" rx="4" fill="#34d399"/>
-                    <path d="M-13 -13 L -8 -8 M 13 -13 L 8 -8 M -13 13 L -8 8 M 13 13 L 8 8" stroke="#34d399" stroke-width="2.6" stroke-linecap="round"/>
-                  </g>
-                  <g transform="translate(300 260)">
-                    <rect x="-7" y="-7" width="14" height="14" rx="3.5" fill="#3b82f6"/>
-                    <path d="M-11 -11 L -7 -7 M 11 -11 L 7 -7 M -11 11 L -7 7 M 11 11 L 7 7" stroke="#3b82f6" stroke-width="2.4" stroke-linecap="round"/>
-                  </g>
-                  <g transform="translate(175 330)">
-                    <circle r="6" fill="#e6edf7"/>
-                    <circle r="12" fill="none" stroke="#e6edf7" stroke-width="1.6" opacity="0.5"/>
-                  </g>
-                  <g font-family="Inter, sans-serif" font-size="11" font-weight="600">
-                    <rect x="450" y="158" width="132" height="32" rx="7" fill="#0b1120" opacity="0.94"/>
-                    <text x="460" y="171" fill="#e6edf7">Adler 2 · Wärmebild</text>
-                    <text x="460" y="184" fill="#9aa8bf">Höhe 62 m · 00:23:41</text>
-                    <rect x="318" y="272" width="120" height="32" rx="7" fill="#0b1120" opacity="0.94"/>
-                    <text x="328" y="285" fill="#e6edf7">Adler 3 · Anflug</text>
-                    <text x="328" y="298" fill="#9aa8bf">Höhe 48 m · 00:04:10</text>
-                    <rect x="120" y="344" width="110" height="18" rx="6" fill="#0b1120" opacity="0.94"/>
-                    <text x="130" y="357" fill="#9aa8bf">Flugleiter-Standort</text>
-                  </g>
-                </svg>
-                <span class="mock-map-tag">3D-Live-Einsatzkarte</span>
-              </div>
-            </div>
-          </div>
-          <p class="mock-caption">Darstellung des Flugleiter-Modus (vereinfachte Produktansicht)</p>
-        </div>
-
-        <div class="container-narrow fl-text reveal">
-          <p>
-            Während der Pilot fliegt, behält der Flugleiter die Übersicht. Neue Einsätze
-            können angelegt, aktive Lagen angezeigt und relevante Informationen zentral
-            dargestellt werden. Die Kartenansicht hilft dabei, den Einsatzraum besser zu
-            verstehen.
-          </p>
-          <ul class="check-list check-list-cols">
+          <ul class="check-list">
             <li>Aktive Einsätze und Aufgaben auf einen Blick</li>
             <li>Startfreigaben verwalten</li>
             <li>Drohnen und Besatzungen zuordnen</li>
@@ -533,7 +474,7 @@
         </div>
 
         <!-- Produkt-Mockup: Wartungsansicht -->
-        <div class="split-visual reveal" aria-hidden="true">
+        <div class="split-visual reveal fx-right" aria-hidden="true">
           <div class="mock-window">
             <div class="mock-titlebar">
               <span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span>
@@ -584,7 +525,6 @@
               <div class="mock-task"><span class="task-check task-done"></span> 14.05. Firmware-Update · Sensorcheck</div>
             </div>
           </div>
-          <p class="mock-caption">Darstellung der Wartungsansicht (vereinfachte Produktansicht)</p>
         </div>
       </div>
     </section>
@@ -636,17 +576,17 @@
     <!-- ===== Teamverwaltung & Rollen ===== -->
     <section class="section" id="team">
       <div class="container split split-reverse">
-        <div class="split-visual reveal" aria-hidden="true">
+        <div class="split-visual reveal fx-left" aria-hidden="true">
           <div class="roles-card">
             <p class="fl-panel-title">Rollen in Drone-Log</p>
             <ul class="roles-list">
-              <li><span class="role-dot role-admin"></span> Admin</li>
-              <li><span class="role-dot role-fl"></span> Flugleiter</li>
-              <li><span class="role-dot role-pilot"></span> Pilot</li>
-              <li><span class="role-dot role-bild"></span> Bildauswerter</li>
-              <li><span class="role-dot role-ausb"></span> Ausbilder</li>
-              <li><span class="role-dot role-wart"></span> Wartungsverantwortlicher</li>
-              <li><span class="role-dot role-user"></span> Benutzer</li>
+              <li>Admin</li>
+              <li>Flugleiter</li>
+              <li>Pilot</li>
+              <li>Bildauswerter</li>
+              <li>Ausbilder</li>
+              <li>Wartungsverantwortlicher</li>
+              <li>Benutzer</li>
             </ul>
           </div>
         </div>
@@ -684,22 +624,28 @@
             <div class="feature-icon">
               <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="8" y="3" width="8" height="18" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M11 18h2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
             </div>
-            <h3>Smartphone</h3>
-            <p>Flüge direkt vor Ort erfassen – am Startpunkt, im Fahrzeug oder bei der Übung.</p>
+            <div class="device-text">
+              <h3>Smartphone</h3>
+              <p>Flüge direkt vor Ort erfassen – am Startpunkt, im Fahrzeug oder bei der Übung.</p>
+            </div>
           </div>
           <div class="device-card">
             <div class="feature-icon">
               <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M10.5 17.5h3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
             </div>
-            <h3>Tablet</h3>
-            <p>Vor Ort verwaltet der Flugleiter Einsätze und Freigaben auf dem Tablet.</p>
+            <div class="device-text">
+              <h3>Tablet</h3>
+              <p>Vor Ort verwaltet der Flugleiter Einsätze und Freigaben auf dem Tablet.</p>
+            </div>
           </div>
           <div class="device-card">
             <div class="feature-icon">
               <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M9 20h6m-3-4v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
             </div>
-            <h3>Desktop</h3>
-            <p>Nach dem Einsatz werden Flüge, Wartungen und Exporte bequem am Rechner geprüft und abgeschlossen.</p>
+            <div class="device-text">
+              <h3>Desktop</h3>
+              <p>Nach dem Einsatz werden Flüge, Wartungen und Exporte bequem am Rechner geprüft und abgeschlossen.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -723,7 +669,7 @@
             <li>Weiterentwicklung mit Feedback aus den Einheiten</li>
           </ul>
         </div>
-        <div class="split-visual reveal" aria-hidden="true">
+        <div class="split-visual reveal fx-right" aria-hidden="true">
           <div class="quote-card">
             <svg class="quote-mark" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.2 5C4.8 6.6 3 9.2 3 12.6 3 16 5 18.5 7.9 18.5c2.3 0 4-1.7 4-4 0-2.2-1.6-3.8-3.7-3.8-.4 0-.8 0-1.1.2.4-2 1.9-3.8 3.9-4.9L7.2 5Zm10 0c-2.4 1.6-4.2 4.2-4.2 7.6 0 3.4 2 5.9 4.9 5.9 2.3 0 4-1.7 4-4 0-2.2-1.6-3.8-3.7-3.8-.4 0-.8 0-1.1.2.4-2 1.9-3.8 3.9-4.9L17.2 5Z"/></svg>
             <p>
@@ -881,6 +827,6 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=3"></script>
 </body>
 </html>
